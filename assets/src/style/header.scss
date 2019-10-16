@@ -1,0 +1,43 @@
+.header{
+    @include vertical-center;
+    .row{
+        @include vertical-center;
+    }
+    // justify-content: space-between;
+    background-color: $indigo; 
+    height: 100px;
+    color: $white;
+    &_menu_button{
+        @include vertical-center;
+        justify-content: flex-start;
+        &-block{ 
+            @include vertical-center;
+            justify-content: center;
+            background-color: $white;
+            height: 48px;
+            width: 54px;
+            border-radius: 2px;
+        }
+        &-bars{
+            color: $indigo;
+            font-size: 32px;
+            font-weight: 400;
+        }
+    }
+    &_logo{
+        width: 100%;
+    }
+        &_h1{
+            font-size: 32px;
+            font-weight: 400;
+        }
+    &_dropdown{
+        display: flex;
+        justify-content: flex-end;
+        .dropdown .btn{
+            @include white-button;
+            width: 138px;
+            height: 48px;
+        }
+    }
+}

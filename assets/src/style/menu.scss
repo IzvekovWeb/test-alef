@@ -1,0 +1,25 @@
+.menu{
+    color: $white;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 38px;
+    background-color: $purple;
+    height: 100%;
+    overflow-y: scroll; 
+    box-shadow: 7px 0 11px -10px #000;
+    z-index: 10;
+    &_ul{
+        list-style: none; 
+        padding-left: 0px;
+    }
+    &_li{ 
+        white-space: nowrap;
+        @include text-dots;
+        padding: 7px 0px;
+        cursor: pointer;
+    }
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: rgba(255, 255, 255, 0.0);
+  }

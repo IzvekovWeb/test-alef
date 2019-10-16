@@ -1,0 +1,71 @@
+.content{
+    height: calc(100vh - 200px);
+    background-color: $purple;
+    padding: 0;
+    .row{
+        height: 100%; 
+    }
+    &_first,&_second,&_third{
+        background: $white;
+        height: 100%;
+        overflow-y: scroll;
+        padding: 0;
+    }
+    &_first{
+        width: 215px;
+        &-block{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 16px;
+            position: relative;
+            background-color: $white;
+
+            &:nth-child(even){
+                background-color: $secondary;
+            }
+            &:first-child(){ 
+                position: sticky;
+                top: 0px; 
+                z-index: 2;
+            }
+            
+            &_img{
+                width: 48px;
+                height: 48px;
+                border-radius: 100%;
+                background-color: $purple;
+            }
+            &_text{
+                color: $purple;
+                font-family: "Open Sans";
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 24px;
+                @include text-dots();
+            }
+        }
+    }
+    &_second{  
+        background-color: $grey; 
+        padding: 15px;
+    }
+    &_third{
+        background-color: $grey;         
+        width: 273px;
+        &-block{
+            color: #3c3c3c;
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-weight: 400;
+            padding: 15px;
+            background-color: $white;
+            max-height: 236px; 
+            @include text-dots($wrap: true);
+
+            &:nth-child(even){
+                background-color: $secondary;
+            }
+        }
+    }
+}

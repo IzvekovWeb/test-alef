@@ -1,0 +1,22 @@
+.footer{
+    background-color: $indigo; 
+    height: 100px;
+    color: $white;
+    .row{
+        height: 100%;
+        @include vertical-center;
+    }
+    &_copyright{
+        font-family: Helvetica;
+        font-size: 18px;
+        font-weight: 400;
+        padding-left: 40px;
+    }
+    &_buttons{
+        display: flex;
+        align-items: center;
+    }
+    &-button{
+        margin-right: 10px;
+    }
+}

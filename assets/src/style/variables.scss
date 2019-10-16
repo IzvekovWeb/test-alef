@@ -1,0 +1,44 @@
+// Variables Bootstrap 4
+ 
+
+$purple:  #7000e0;
+$indigo:  #7e00ff;
+$secondary:  #f6f6f6;
+$grey: #e6e6e6;
+ 
+.container{
+  padding: 0 !important;
+}
+$container-max-widths: (
+  sm: 540px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px
+) !default;
+
+// Mixins
+@mixin vertical-center {
+    display: flex;
+    align-items: center;
+  }
+
+@mixin white-button {
+    background-color: $white;
+    border-radius: 2px;
+    color: $indigo;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+}  
+
+@mixin text-dots($wrap: false){
+  @if($wrap){
+    white-space: unset;
+  }@else{
+    white-space: nowrap;
+  }
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url('assets/xml/ellipsis.xml#ellipsis');
+}
