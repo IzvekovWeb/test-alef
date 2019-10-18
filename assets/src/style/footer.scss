@@ -11,12 +11,19 @@
         font-size: 18px;
         font-weight: 400;
         padding-left: 40px;
+        @media screen and (max-width: 576px){
+            text-align: center;
+        }
     }
     &_buttons{
         display: flex;
         align-items: center;
+        justify-content: flex-end;
+        @media screen and (max-width: 576px){
+            justify-content: center;
+        }
     }
-    &-button{
+    &-button:first-child{
         margin-right: 10px;
     }
 }

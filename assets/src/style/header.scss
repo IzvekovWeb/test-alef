@@ -10,6 +10,7 @@
     &_menu_button{
         @include vertical-center;
         justify-content: flex-start;
+        padding: 0;
         &-block{ 
             @include vertical-center;
             justify-content: center;
@@ -17,6 +18,16 @@
             height: 48px;
             width: 54px;
             border-radius: 2px;
+            margin-left: 40px;
+            transition: all 0.3s;
+            outline: none;
+            &:hover{
+                box-shadow: 0px 0px 15px -5px #000;
+                border-radius: 100%;
+            }
+            @media screen and (max-width: 576px){
+                margin-left: 4px;
+            }
         }
         &-bars{
             color: $indigo;
@@ -26,10 +37,14 @@
     }
     &_logo{
         width: 100%;
+        
     }
         &_h1{
             font-size: 32px;
             font-weight: 400;
+            @media screen and (max-width: 576px){
+                font-size: 24px;
+            }
         }
     &_dropdown{
         display: flex;
@@ -38,6 +53,12 @@
             @include white-button;
             width: 138px;
             height: 48px;
+            @media screen and (max-width: 576px){
+                font-size: 18px; 
+                width: 100px;
+                height: 46px;
+            }
         }
+        
     }
 }

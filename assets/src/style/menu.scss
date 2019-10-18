@@ -18,6 +18,11 @@
         padding: 7px 0px;
         cursor: pointer;
     }
+    @media screen and (max-width: 1024px){
+        position: absolute;
+        margin-top: -1px;
+        height: 101%;
+    }
 }
 ::-webkit-scrollbar {
     width: 0px;
